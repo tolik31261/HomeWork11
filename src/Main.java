@@ -44,19 +44,24 @@ public class Main {
 
     public static void task3() {
         System.out.println("Задача 3");
-        calculateDelivery(425);
+        calculateDelivery(19);
         }
 
     public static void calculateDelivery (int deliveryDistance) {
+        int day;
         if (deliveryDistance <= 20) {
-            System.out.println("Доставка до клиента занимает 1 день");
+            day = 1;
+            System.out.println("Доставка до клиента занимает " + day + " день");
         } else if (deliveryDistance <= 60) {
-            System.out.println("Доставка до клиента занимает 2 дня");
+            day = 2;
+            System.out.println("Доставка до клиента занимает " + day + " день");
         } else if (deliveryDistance <=100) {
-            System.out.println("Доставка до клиента занимает 3 дня");
+            day = 3;
+            System.out.println("Доставка до клиента занимает " + day + " день");
         } else {
             System.out.println("Нет доставки");
         }
+
     }
 
 }
